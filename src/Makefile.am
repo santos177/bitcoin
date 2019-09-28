@@ -379,6 +379,9 @@ crypto_libbitcoin_crypto_base_a_SOURCES = \
   crypto/sha256.h \
   crypto/sha512.cpp \
   crypto/sha512.h \
+	crypto/scrypt.cpp \
+	crypto/scrypt-sse2.cpp \
+	crypto/scrypt.h \
   crypto/siphash.cpp \
   crypto/siphash.h
 
@@ -439,6 +442,8 @@ libbitcoin_consensus_a_SOURCES = \
   uint256.h \
   util/strencodings.cpp \
   util/strencodings.h \
+	utilstrencodings.cpp \
+	utilstrencodings.h \
   version.h
 
 # common: shared between bitcoind, and bitcoin-qt and non-server tools

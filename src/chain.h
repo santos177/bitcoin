@@ -397,6 +397,12 @@ public:
         return block.GetHash();
     }
 
+    //NOTE: litecoin changes
+    uint256 GetBlockPoWHash() const
+    {
+      return GetBlockHeader().GetPoWHash();
+    }
+
 
     std::string ToString() const
     {
